@@ -1,0 +1,29 @@
+<div class="box" *ngIf="publicacao">
+  <div class="box-header with-border">
+    <h3 class="box-title">Diagrama</h3>
+    <p id="user">Atualizado por <strong>{{ publicacao.nome_usuario }}</strong></p>
+  </div>
+  <div class="box-body">
+    <div rows>
+      <div class="col-md-10">
+          <img [src]="publicacao.url_imagem || ''" >
+      </div>
+    </div>
+  </div>
+  <!-- /.box-body -->
+  <div class="box-footer">
+    <form class="role form" [formGroup]="formulario" (ngSubmit)="publicar()" novalidate>
+      <div id="input" class="form-group">
+        <input
+          type="file"
+          class="form-control"
+          id="exampleInputFile"
+          accept="image/*"
+          (change)="preparaImagemUpload($event)"
+        >
+      </div>
+      <button type="submit" class="btn btn-primary" style="float: right">Atualizar</button>
+    </form>
+  </div>
+  <!-- /.box-footer-->
+</div>

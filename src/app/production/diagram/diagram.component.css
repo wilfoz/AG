@@ -1,0 +1,16 @@
+div #input {
+  display: block;
+  float: left;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  padding-top: 3px;
+}
+img {
+  max-width:120%;
+	height:auto;
+}
+
+p#user {
+  float: right
+}
+

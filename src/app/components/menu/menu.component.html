@@ -1,0 +1,70 @@
+<aside class="main-sidebar">
+  <!-- sidebar: style can be found in sidebar.less -->
+  <section class="sidebar">
+    <!-- Sidebar user panel -->
+    <div class="user-panel">
+      <div class="pull-left image">
+        <img src="../../../assets/ico/ms-icon-310x310.png" alt="Logo Image">
+      </div>
+    </div>
+
+    <!-- sidebar menu: : style can be found in sidebar.less -->
+    <ul class="sidebar-menu" data-widget="tree">
+      <li class="header">MAIN NAVIGATION</li>
+
+      <li><a [routerLink]="['/']" ><i class="fa fa-home"></i> <span>Home</span></a></li>
+
+      <li class="active treeview menu-open">
+        <a href="#">
+          <i class="fa fa-industry"></i> <span>Controls</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+        </a>
+        <ul class="treeview-menu">
+          <li><a href="index.html"><i class="fa fa-circle-o"></i> Programação Diaria</a></li>
+          <li><a href="index.html"><i class="fa fa-circle-o"></i> Programação Semanal</a></li>
+          <li><a href="index.html"><i class="fa fa-circle-o"></i> Listar Produção</a></li>
+          <li><a href="index.html"><i class="fa fa-circle-o"></i> Cadastrar Produção</a></li>
+        </ul>
+      </li>
+      <li class="treeview">
+        <a href="#">
+          <i class="fa fa-pie-chart"></i> <span>Gráficos</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+        </a>
+        <ul class="treeview-menu">
+
+          <li class="treeview">
+            <a href="#"><i class="fa fa-circle-o"></i> Produção
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a [routerLink]="['/diagrama']" ><i class="fa fa-circle-o"></i> Diagrama</a></li>
+              <li><a href="#"><i class="fa fa-circle-o"></i> Dashboard</a></li>
+            </ul>
+          </li>
+          <li><a href="#"><i class="fa fa-circle-o"></i> Planejamento</a></li>
+        </ul>
+      </li>
+      <li class="treeview">
+        <a href="#">
+          <i class="fa fa-calendar"></i> <span>Histogramas</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+        </a>
+        <ul class="treeview-menu">
+          <li><a href="#"><i class="fa fa-circle-o"></i> MO</a></li>
+          <li><a href="#"><i class="fa fa-circle-o"></i> MA</a></li>
+        </ul>
+      </li>
+
+    </ul>
+  </section>
+  <!-- /.sidebar -->
+</aside>
